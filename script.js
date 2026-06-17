@@ -10,10 +10,9 @@ window.addEventListener('scroll', () => {
    TYPING EFFECT
 ============================= */
 const phrases = [
-  'System Administrator → DevOps Engineer',
-  'AWS · Terraform · Docker · CI/CD · Linux',
+  'AWS · Terraform · Docker · CI/CD · Jenkins',
   'Building reliable cloud infrastructure',
-  'Actively seeking DevOps internships'
+  'Ansible · Kubernetes · Linux Systems',
 ];
 
 let phraseIndex = 0;
@@ -32,7 +31,7 @@ function type() {
       setTimeout(type, 400);
       return;
     }
-    setTimeout(type, 40);
+    setTimeout(type, 35);
   } else {
     charIndex++;
     typedEl.textContent = current.substring(0, charIndex);
@@ -41,29 +40,26 @@ function type() {
       setTimeout(type, 2600);
       return;
     }
-    setTimeout(type, 60);
+    setTimeout(type, 55);
   }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  setTimeout(type, 1200);
+  setTimeout(type, 1000);
 });
 
 /* =============================
    REVEAL ON SCROLL
 ============================= */
 const revealEls = document.querySelectorAll(
-  '.about-terminal, .about-text, .skill-card, .project-featured, .more-projects, .contact-card'
+  '.about-text, .arch-visual, .skill-card, .project-featured, .more-projects, .contact-card'
 );
-
 revealEls.forEach(el => el.classList.add('reveal'));
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry, i) => {
     if (entry.isIntersecting) {
-      setTimeout(() => {
-        entry.target.classList.add('visible');
-      }, 80 * i);
+      setTimeout(() => entry.target.classList.add('visible'), 70 * i);
       observer.unobserve(entry.target);
     }
   });
@@ -74,15 +70,12 @@ revealEls.forEach(el => observer.observe(el));
 /* =============================
    METRIC BARS ANIMATE ON VIEW
 ============================= */
-const metricFills = document.querySelectorAll('.metric-fill');
 const metricObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      const fills = entry.target.querySelectorAll('.metric-fill');
-      fills.forEach(fill => {
-        const target = fill.style.width;
-        fill.style.width = '0%';
-        setTimeout(() => { fill.style.width = target; }, 200);
+      entry.target.querySelectorAll('.metric-fill').forEach(fill => {
+        const target = getComputedStyle(fill).getPropertyValue('--w').trim();
+        fill.style.width = target;
       });
       metricObserver.unobserve(entry.target);
     }
