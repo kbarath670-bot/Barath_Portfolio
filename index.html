@@ -6,12 +6,11 @@
   <title>Barath Kumar | DevOps Engineer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- NAV -->
   <nav id="navbar">
     <div class="nav-logo">BK<span class="dot">.</span></div>
     <ul class="nav-links">
@@ -23,182 +22,272 @@
     <a href="https://github.com/kbarath670-bot" target="_blank" class="nav-cta">GitHub ↗</a>
   </nav>
 
-  <!-- HERO -->
   <section id="hero">
-    <!-- Video Background -->
-    <div class="video-bg">
-      <iframe
-        src="https://www.youtube.com/embed/jfKfPfyJRdk?autoplay=1&mute=1&loop=1&playlist=jfKfPfyJRdk&controls=0&showinfo=0&rel=0&modestbranding=1&iv_load_policy=3"
-        frameborder="0"
-        allow="autoplay; fullscreen"
-        allowfullscreen
-        title="Background Video"
-      ></iframe>
+    <div class="hero-bg">
+      <div class="grid-overlay"></div>
+      <svg class="circuit-svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+        <g class="circuit-lines">
+          <path d="M0,150 H400 V300 H900 V120 H1600" />
+          <path d="M0,450 H250 V600 H700 V750 H1600" />
+          <path d="M200,0 V200 H600 V500 H300 V900" />
+          <path d="M1300,0 V250 H1000 V550 H1400 V900" />
+          <path d="M0,700 H500 V800 H1600" />
+        </g>
+        <g class="circuit-nodes">
+          <circle cx="400" cy="150" r="5"/>
+          <circle cx="900" cy="300" r="5"/>
+          <circle cx="900" cy="120" r="5"/>
+          <circle cx="250" cy="450" r="5"/>
+          <circle cx="700" cy="600" r="5"/>
+          <circle cx="700" cy="750" r="5"/>
+          <circle cx="600" cy="200" r="5"/>
+          <circle cx="600" cy="500" r="5"/>
+          <circle cx="300" cy="500" r="5"/>
+          <circle cx="1000" cy="250" r="5"/>
+          <circle cx="1000" cy="550" r="5"/>
+          <circle cx="1400" cy="550" r="5"/>
+          <circle cx="500" cy="700" r="5"/>
+          <circle cx="500" cy="800" r="5"/>
+        </g>
+      </svg>
     </div>
     <div class="video-overlay"></div>
-
-    <!-- Hero Content -->
     <div class="hero-content">
-      <p class="hero-eyebrow"><span class="terminal-prompt">~/devops $</span> <span class="blink">▌</span></p>
-      <h1 class="hero-title">
-        Barath<br />
-        <span class="hero-accent">Kumar</span>
-      </h1>
+      <p class="hero-eyebrow">System Administrator <span class="sep">|</span> DevOps Engineer</p>
+      <h1 class="hero-title">Barath Kumar</h1>
       <p class="hero-subtitle" id="typed-text"></p>
       <div class="hero-badges">
         <span class="badge">AWS</span>
         <span class="badge">Terraform</span>
         <span class="badge">Docker</span>
+        <span class="badge">Jenkins</span>
+        <span class="badge">Ansible</span>
+        <span class="badge">Kubernetes</span>
         <span class="badge">CI/CD</span>
         <span class="badge">Linux</span>
+        <span class="badge">GitHub</span>
       </div>
       <div class="hero-cta-group">
         <a href="#projects" class="btn-primary">View My Work</a>
         <a href="mailto:kbarath670@gmail.com" class="btn-ghost">Get In Touch</a>
       </div>
     </div>
-
-    <!-- Scroll hint -->
     <div class="scroll-hint">
       <span>scroll</span>
       <div class="scroll-line"></div>
     </div>
   </section>
 
-  <!-- ABOUT -->
   <section id="about">
     <div class="container">
-      <div class="section-label">01 — About</div>
+      <div class="section-label">About</div>
       <div class="about-grid">
-        <div class="about-terminal">
-          <div class="terminal-header">
-            <span class="t-dot t-red"></span>
-            <span class="t-dot t-yellow"></span>
-            <span class="t-dot t-green"></span>
-            <span class="t-title">barath@aws-ec2 ~</span>
-          </div>
-          <div class="terminal-body">
-            <p><span class="t-prompt">$</span> whoami</p>
-            <p class="t-output">barath_kumar</p>
-            <p><span class="t-prompt">$</span> cat role.txt</p>
-            <p class="t-output">DevOps Engineer (Intern) <span class="t-cursor">▌</span></p>
-            <p><span class="t-prompt">$</span> cat location.txt</p>
-            <p class="t-output">Coimbatore, Tamil Nadu, IN</p>
-            <p><span class="t-prompt">$</span> cat certifications.txt</p>
-            <p class="t-output">CISSP — (ISC)²</p>
-            <p class="t-output">Oracle Certified Expert — Database SQL</p>
-            <p><span class="t-prompt">$</span> echo $STATUS</p>
-            <p class="t-output t-green-text">Actively seeking DevOps internship opportunities</p>
-          </div>
-        </div>
         <div class="about-text">
           <h2 class="section-title">Building the Infrastructure<br/><span class="accent">Behind the Product</span></h2>
-          <p>I'm a System Administrator at eClerx Services who has spent the past year engineering a full AWS cloud infrastructure from scratch — not just studying it. From custom VPCs and LAMP stacks to Terraform-provisioned environments, Ansible automation, Docker containerization, and GitHub Actions pipelines, every component has been built, broken, debugged, and hardened hands-on.</p>
-          <p>My approach to DevOps is grounded in real-world systems thinking: I've worked through SELinux misconfigurations, credential exposure incidents, K3s RAM exhaustion on t3.micro, and Docker buildx architecture mismatches. Each problem sharpened both my technical depth and my instinct for reliable, maintainable infrastructure.</p>
-          <p>I hold a B.Sc. in Information Technology from Karpagam Academy, and I'm driven to grow into a Solutions Architect role — building systems that are not only functional but resilient, observable, and cost-aware.</p>
+          <p>I'm a System Administrator at eClerx Services with a proven track record of designing and operating enterprise-grade Linux environments. Over the past year, I've extended that foundation into full AWS cloud infrastructure — engineering custom VPCs, automating deployments with Terraform and Ansible, containerizing applications with Docker, and building GitHub Actions CI/CD pipelines from scratch.</p>
+          <p>My approach to infrastructure is grounded in real operational experience: resolving SELinux misconfigurations, hardening MariaDB post-installation, rotating exposed credentials, and debugging K3s RAM exhaustion on constrained instances. Every system I build is designed to be observable, maintainable, and cost-aware.</p>
+          <p>I hold a B.Sc. in IT from Karpagam Academy, a CISSP from (ISC)², and an Oracle Certified Expert — Database SQL. My long-term goal is a Solutions Architect role — building systems that are production-resilient at scale.</p>
           <div class="about-links">
             <a href="https://linkedin.com/in/barathkumar1803" target="_blank" class="link-pill">LinkedIn ↗</a>
             <a href="https://github.com/kbarath670-bot" target="_blank" class="link-pill">GitHub ↗</a>
+            <a href="mailto:kbarath670@gmail.com" class="link-pill">Email ↗</a>
+          </div>
+        </div>
+        <div class="arch-diagram">
+          <div class="arch-header">
+            <span class="arch-label">AWS Infrastructure</span>
+            <span class="arch-region">eu-north-1 · Stockholm</span>
+          </div>
+          <div class="arch-body">
+            <div class="arch-vpc">
+              <span class="arch-vpc-label">VPC — 10.0.0.0/16</span>
+              <div class="arch-zones">
+                <div class="arch-az">
+                  <span class="az-label">AZ-1a</span>
+                  <div class="arch-subnet public">
+                    <span class="subnet-label">Public</span>
+                    <div class="arch-node ec2">EC2<br/><small>LAMP+Flask</small></div>
+                  </div>
+                  <div class="arch-subnet private">
+                    <span class="subnet-label">Private</span>
+                    <div class="arch-node db">MariaDB</div>
+                  </div>
+                </div>
+                <div class="arch-az">
+                  <span class="az-label">AZ-1b</span>
+                  <div class="arch-subnet public">
+                    <span class="subnet-label">Public</span>
+                    <div class="arch-node docker">Docker<br/><small>Node/Nginx</small></div>
+                  </div>
+                  <div class="arch-subnet private">
+                    <span class="subnet-label">Private</span>
+                    <div class="arch-node s3">S3<br/><small>Backups</small></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="arch-services">
+              <div class="arch-svc">CloudWatch</div>
+              <div class="arch-svc">SNS</div>
+              <div class="arch-svc">IAM</div>
+              <div class="arch-svc">Route 53</div>
+            </div>
+            <div class="arch-cicd">
+              <div class="cicd-node">GitHub Actions CI/CD</div>
+              <div class="cicd-arrow">⟷</div>
+              <div class="cicd-node">Terraform IaC</div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SKILLS -->
   <section id="skills">
     <div class="container">
-      <div class="section-label">02 — Skills</div>
+      <div class="section-label">Skills</div>
       <h2 class="section-title">Tech <span class="accent">Stack</span></h2>
       <div class="skills-grid">
 
         <div class="skill-card">
-          <div class="skill-icon">☁️</div>
-          <h3>Cloud & Infrastructure</h3>
-          <ul>
-            <li>AWS EC2, VPC, S3, IAM</li>
-            <li>CloudWatch + SNS Alerts</li>
-            <li>Route 53, Security Groups</li>
-            <li>Multi-AZ Architecture</li>
-          </ul>
+          <div class="card-inner">
+            <div class="card-front">
+              <div class="skill-icon">☁️</div>
+              <h3>Cloud & Infrastructure</h3>
+              <p class="card-hint">hover to explore</p>
+            </div>
+            <div class="card-back">
+              <h3>Cloud & Infrastructure</h3>
+              <ul>
+                <li>AWS EC2, VPC, S3, IAM</li>
+                <li>CloudWatch + SNS Alerts</li>
+                <li>Route 53 · Security Groups</li>
+                <li>Multi-AZ Architecture</li>
+                <li>Cost Optimisation</li>
+              </ul>
+            </div>
+          </div>
         </div>
 
         <div class="skill-card">
-          <div class="skill-icon">⚙️</div>
-          <h3>IaC & Automation</h3>
-          <ul>
-            <li>Terraform (modular)</li>
-            <li>Ansible Playbooks</li>
-            <li>Bash Scripting + Cron</li>
-            <li>S3 Automated Backups</li>
-          </ul>
+          <div class="card-inner">
+            <div class="card-front">
+              <div class="skill-icon">⚙️</div>
+              <h3>IaC & Automation</h3>
+              <p class="card-hint">hover to explore</p>
+            </div>
+            <div class="card-back">
+              <h3>IaC & Automation</h3>
+              <ul>
+                <li>Terraform (modular)</li>
+                <li>Ansible Playbooks</li>
+                <li>Bash Scripting + Cron</li>
+                <li>S3 Automated Backups</li>
+                <li>Idempotent Deployments</li>
+              </ul>
+            </div>
+          </div>
         </div>
 
         <div class="skill-card">
-          <div class="skill-icon">🐳</div>
-          <h3>Containers & CI/CD</h3>
-          <ul>
-            <li>Docker + Docker Compose</li>
-            <li>GitHub Actions Pipelines</li>
-            <li>Kubernetes (KillerCoda)</li>
-            <li>Node.js / Nginx in Docker</li>
-          </ul>
+          <div class="card-inner">
+            <div class="card-front">
+              <div class="skill-icon">🐳</div>
+              <h3>Containers & CI/CD</h3>
+              <p class="card-hint">hover to explore</p>
+            </div>
+            <div class="card-back">
+              <h3>Containers & CI/CD</h3>
+              <ul>
+                <li>Docker + Docker Compose</li>
+                <li>Kubernetes (KillerCoda)</li>
+                <li>GitHub Actions</li>
+                <li>Jenkins</li>
+                <li>Node.js / Nginx</li>
+              </ul>
+            </div>
+          </div>
         </div>
 
         <div class="skill-card">
-          <div class="skill-icon">🐧</div>
-          <h3>Linux & Web</h3>
-          <ul>
-            <li>Amazon Linux 2023, Ubuntu</li>
-            <li>Apache + mod_ssl (HTTPS)</li>
-            <li>MariaDB, PHP (LAMP)</li>
-            <li>SELinux, systemd, /proc</li>
-          </ul>
+          <div class="card-inner">
+            <div class="card-front">
+              <div class="skill-icon">🐧</div>
+              <h3>Linux & Web Stack</h3>
+              <p class="card-hint">hover to explore</p>
+            </div>
+            <div class="card-back">
+              <h3>Linux & Web Stack</h3>
+              <ul>
+                <li>Amazon Linux 2023, Ubuntu</li>
+                <li>Apache + mod_ssl (HTTPS)</li>
+                <li>MariaDB · PHP (LAMP)</li>
+                <li>SELinux · systemd · /proc</li>
+                <li>Performance Tuning</li>
+              </ul>
+            </div>
+          </div>
         </div>
 
         <div class="skill-card">
-          <div class="skill-icon">🐍</div>
-          <h3>Observability & Dev</h3>
-          <ul>
-            <li>Python / boto3 (AWS SDK)</li>
-            <li>Flask REST APIs</li>
-            <li>CloudWatch Agent</li>
-            <li>Git / GitHub</li>
-          </ul>
+          <div class="card-inner">
+            <div class="card-front">
+              <div class="skill-icon">📊</div>
+              <h3>Observability & Dev</h3>
+              <p class="card-hint">hover to explore</p>
+            </div>
+            <div class="card-back">
+              <h3>Observability & Dev</h3>
+              <ul>
+                <li>Python / boto3 (AWS SDK)</li>
+                <li>Flask REST APIs</li>
+                <li>CloudWatch Agent</li>
+                <li>Custom Dashboards</li>
+                <li>Git / GitHub</li>
+              </ul>
+            </div>
+          </div>
         </div>
 
         <div class="skill-card">
-          <div class="skill-icon">🔒</div>
-          <h3>Security</h3>
-          <ul>
-            <li>CISSP Certified</li>
-            <li>IAM Least-Privilege</li>
-            <li>Credential Rotation</li>
-            <li>Oracle Certified SQL Expert</li>
-          </ul>
+          <div class="card-inner">
+            <div class="card-front">
+              <div class="skill-icon">🔒</div>
+              <h3>Security</h3>
+              <p class="card-hint">hover to explore</p>
+            </div>
+            <div class="card-back">
+              <h3>Security</h3>
+              <ul>
+                <li>CISSP — (ISC)²</li>
+                <li>IAM Least-Privilege</li>
+                <li>Credential Rotation</li>
+                <li>SELinux Hardening</li>
+                <li>Oracle Certified SQL</li>
+              </ul>
+            </div>
+          </div>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- PROJECTS -->
   <section id="projects">
     <div class="container">
-      <div class="section-label">03 — Projects</div>
+      <div class="section-label">Projects</div>
       <h2 class="section-title">Featured <span class="accent">Work</span></h2>
-
       <div class="project-featured">
         <div class="project-meta">
           <span class="project-tag">AWS · Linux · Flask · Python · CloudWatch</span>
           <h3 class="project-name">Server Health Monitor</h3>
-          <p class="project-desc">A real-time server health monitoring dashboard built on AWS, reading live metrics directly from the Linux <code>/proc</code> filesystem. The system surfaces CPU usage, memory consumption, disk I/O, and uptime into a web dashboard backed by a Flask API — with CloudWatch Agent integration for metric shipping and SNS alerting for threshold breaches.</p>
+          <p class="project-desc">A real-time server health monitoring dashboard built on AWS, reading live metrics directly from the Linux <code>/proc</code> filesystem. CPU, memory, disk I/O, and uptime surface into a Flask REST API-backed dashboard — with CloudWatch Agent integration and SNS alerting on threshold breaches.</p>
           <ul class="project-highlights">
-            <li>Reads from <code>/proc/stat</code>, <code>/proc/meminfo</code>, <code>/proc/diskstats</code> for raw system data</li>
+            <li>Reads from <code>/proc/stat</code>, <code>/proc/meminfo</code>, <code>/proc/diskstats</code></li>
             <li>Flask REST API serves metrics to a responsive front-end dashboard</li>
-            <li>CloudWatch Agent configured to ship custom metrics; SNS triggers on breach</li>
-            <li>Deployed on a custom VPC with public/private subnets across two AZs</li>
-            <li>HTTPS secured via Apache mod_ssl; session-authenticated admin interface</li>
+            <li>CloudWatch Agent ships custom metrics; SNS triggers on threshold breach</li>
+            <li>Deployed inside a custom VPC with public/private subnets across two AZs</li>
+            <li>HTTPS via Apache mod_ssl; session-authenticated admin interface</li>
           </ul>
           <div class="project-actions">
             <a href="https://github.com/kbarath670-bot/company-aws-infrastructure" target="_blank" class="btn-primary">View on GitHub ↗</a>
@@ -208,33 +297,33 @@
           <div class="monitor-mockup">
             <div class="monitor-bar">
               <span class="m-dot"></span><span class="m-dot"></span><span class="m-dot"></span>
-              <span class="m-url">server-health.kbarath.dev</span>
+              <span class="m-url">server-health · eu-north-1</span>
             </div>
             <div class="monitor-screen">
               <div class="metric-row">
-                <span class="metric-label">CPU Usage</span>
-                <div class="metric-bar"><div class="metric-fill" style="width:42%"></div></div>
+                <span class="metric-label">CPU</span>
+                <div class="metric-bar"><div class="metric-fill" data-width="42"></div></div>
                 <span class="metric-val">42%</span>
               </div>
               <div class="metric-row">
                 <span class="metric-label">Memory</span>
-                <div class="metric-bar"><div class="metric-fill" style="width:67%"></div></div>
+                <div class="metric-bar"><div class="metric-fill" data-width="67"></div></div>
                 <span class="metric-val">67%</span>
               </div>
               <div class="metric-row">
                 <span class="metric-label">Disk I/O</span>
-                <div class="metric-bar"><div class="metric-fill" style="width:23%"></div></div>
+                <div class="metric-bar"><div class="metric-fill" data-width="23"></div></div>
                 <span class="metric-val">23%</span>
               </div>
               <div class="metric-row">
                 <span class="metric-label">Uptime</span>
-                <div class="metric-bar"><div class="metric-fill uptime" style="width:100%"></div></div>
+                <div class="metric-bar"><div class="metric-fill uptime" data-width="100"></div></div>
                 <span class="metric-val">99.9%</span>
               </div>
               <div class="monitor-log">
                 <p><span class="log-ok">[OK]</span> CloudWatch agent running</p>
                 <p><span class="log-ok">[OK]</span> Apache/2.4 — HTTPS active</p>
-                <p><span class="log-ok">[OK]</span> MariaDB — all tables healthy</p>
+                <p><span class="log-ok">[OK]</span> MariaDB — tables healthy</p>
                 <p><span class="log-warn">[WARN]</span> Memory &gt; 60% threshold</p>
                 <p><span class="log-ok">[SNS]</span> Alert dispatched ✓</p>
               </div>
@@ -242,64 +331,52 @@
           </div>
         </div>
       </div>
-
-      <!-- More projects teaser -->
       <div class="more-projects">
-        <p class="more-label">Also built during this journey:</p>
+        <p class="more-label">Also built during this journey</p>
         <div class="chip-list">
-          <span class="chip">Terraform IaC — Full VPC Provisioning</span>
+          <span class="chip">Terraform IaC — VPC Provisioning</span>
           <span class="chip">Ansible LAMP Playbooks</span>
-          <span class="chip">Docker + Node.js/Nginx App</span>
-          <span class="chip">GitHub Actions CI/CD Pipeline</span>
+          <span class="chip">Docker + Node.js/Nginx</span>
+          <span class="chip">GitHub Actions CI/CD</span>
+          <span class="chip">Jenkins Pipeline</span>
           <span class="chip">Python DevOps Toolkit (boto3)</span>
-          <span class="chip">REST API DevOps Portfolio App</span>
-          <span class="chip">Kubernetes Practice (KillerCoda)</span>
+          <span class="chip">Flask REST API Portfolio App</span>
+          <span class="chip">Kubernetes on KillerCoda</span>
         </div>
         <a href="https://github.com/kbarath670-bot/company-aws-infrastructure" target="_blank" class="link-arrow">Explore full repository ↗</a>
       </div>
     </div>
   </section>
 
-  <!-- CONTACT -->
   <section id="contact">
     <div class="container">
-      <div class="section-label">04 — Contact</div>
+      <div class="section-label">Contact</div>
       <div class="contact-inner">
         <h2 class="section-title contact-title">Let's Build<br/><span class="accent">Something Real</span></h2>
-        <p class="contact-sub">I'm actively looking for DevOps internship opportunities where I can contribute hands-on to cloud infrastructure, automation, and CI/CD pipelines. If you're working on something interesting, I'd love to hear about it.</p>
+        <p class="contact-sub">Open to DevOps and cloud infrastructure opportunities where I can contribute hands-on to automation, CI/CD, and scalable deployments.</p>
         <div class="contact-links">
           <a href="mailto:kbarath670@gmail.com" class="contact-card">
             <span class="contact-icon">✉</span>
-            <div>
-              <p class="contact-type">Email</p>
-              <p class="contact-val">kbarath670@gmail.com</p>
-            </div>
+            <div><p class="contact-type">Email</p><p class="contact-val">kbarath670@gmail.com</p></div>
           </a>
           <a href="https://linkedin.com/in/barathkumar1803" target="_blank" class="contact-card">
             <span class="contact-icon">in</span>
-            <div>
-              <p class="contact-type">LinkedIn</p>
-              <p class="contact-val">barathkumar1803</p>
-            </div>
+            <div><p class="contact-type">LinkedIn</p><p class="contact-val">barathkumar1803</p></div>
           </a>
           <a href="https://github.com/kbarath670-bot" target="_blank" class="contact-card">
             <span class="contact-icon">⌥</span>
-            <div>
-              <p class="contact-type">GitHub</p>
-              <p class="contact-val">kbarath670-bot</p>
-            </div>
+            <div><p class="contact-type">GitHub</p><p class="contact-val">kbarath670-bot</p></div>
           </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer>
     <div class="container footer-inner">
       <span class="footer-logo">BK<span class="dot">.</span></span>
-      <p class="footer-copy">Designed & built by Barath Kumar · Hosted on GitHub Pages</p>
-      <a href="#hero" class="footer-top">Back to top ↑</a>
+      <p class="footer-copy">Designed & built by Barath Kumar A </p>
+      <a href="#hero" class="footer-top">↑ Top</a>
     </div>
   </footer>
 
