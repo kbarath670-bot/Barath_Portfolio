@@ -23,6 +23,9 @@ ul{list-style:none}
 .nav-links a:hover{color:var(--white)}
 .nav-cta{font-family:'DM Sans',sans-serif;font-size:0.85rem;font-weight:600;color:var(--cyan);border:1px solid var(--border);padding:9px 22px;border-radius:6px;transition:all 0.2s;letter-spacing:0.02em}
 .nav-cta:hover{background:rgba(0,212,255,0.08);border-color:var(--cyan)}
+.nav-link-group{display:flex;gap:10px}
+.nav-cta.secondary{color:var(--white);border-color:rgba(255,255,255,0.15)}
+.nav-cta.secondary:hover{border-color:var(--cyan);color:var(--cyan)}
 
 /* HERO */
 #hero{position:relative;height:100vh;min-height:700px;display:flex;align-items:center;overflow:hidden}
